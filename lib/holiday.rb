@@ -68,8 +68,9 @@ def all_holidays_with_bbq(holiday_hash)
   new_array = []
   holiday_hash.map do |season, holiday|
     holiday_hash.map do |holiday, supply|
+      binding.pry
       if supply.include?("BBQ")
-        binding.pry
+
         new_array << holiday
 
       end
